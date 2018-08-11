@@ -6,10 +6,10 @@ const socket = require('./socket/chat')(io, http);
 const path = require('path');
 const port = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname + '/client/dist/')));
+app.use(express.static(path.join(__dirname + '/dist/')));
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/client/dist/index.html');
+  res.sendFile(__dirname + 'index.html');
 });
 
 
