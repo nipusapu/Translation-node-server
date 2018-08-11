@@ -7,8 +7,8 @@
     "start": "node index.js",
     "build": "cd client/ && ng build --prod --env=prod && cd .."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["heroku"],
+  "author": "Knip",
   "license": "ISC",
   "dependencies": {
     "@google-cloud/translate": "^1.1.0",
@@ -16,5 +16,8 @@
     "firebase": "^4.12.0",
     "request": "^2.83.0",
     "socket.io": "^2.1.1"
+  },
+  "engines": {
+    "node": "8.9.3"
   }
 }
